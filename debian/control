@@ -1,0 +1,32 @@
+Source: arduino-bt328
+Section: boards
+XBSC-Family: avr
+Priority: optional
+Maintainer: Matt Jenkins <matt@majenko.co.uk>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: http://arduino.cc/en/Guide/ArduinoBT
+
+Package: arduino-bt328
+Section: boards
+Architecture: all
+XBSC-Group: Arduino
+Depends: arduino
+Description: Arduino BT w/ ATmega328
+ The Arduino BT is an Arduino board with built-in
+ bluetooth module, allowing for wireless communication.
+ To get started with the Arduino BT, follow the directions
+ for the Arduino NG on your operating system (Windows, Mac
+ OS X, Linux), with the following modifications:
+ .
+ * First, pair the Arduino BT with your computer and create a
+ virtual serial port for it. Look for a bluetooth device called
+ ARDUINOBT and the pass code is 12345.
+ * Select Arduino BT from the Tools | Board menu of the Arduino environment.
+ .
+ When uploading to the Arduino BT, you may need to press the
+ reset button on the board shortly before (or shortly after)
+ clicking upload in the Arduino software.
+
+
+
